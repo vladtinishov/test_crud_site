@@ -1,7 +1,6 @@
 <?php
 require_once('../config/database.php');
-
-class Create{
+class Delete{
     private $db;
     private $pdo;
 
@@ -11,16 +10,10 @@ class Create{
         $this->pdo = $this->db->getPDO();
     }
 
-    public function create($data, $sql){
+    public function delete($data, $db){
+        $sql = "DELETE FROM $db WHERE id=:id";
         $stmt = $this->pdo->prepare($sql);
-        
-        foreach($data as $key => $value){
-            $stmt->bindValue(":$key", $value);
-        }
-
+        $stmt->bindValue(':id', $data);
         $stmt->execute();
-
     }
 }
-
-
