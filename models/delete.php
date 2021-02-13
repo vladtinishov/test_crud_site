@@ -1,4 +1,5 @@
 <?php
+// модель для управления страницей удаления записей
 require_once('../config/database.php');
 class Delete{
     private $db;

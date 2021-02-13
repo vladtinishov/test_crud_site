@@ -1,4 +1,5 @@
 <?php
+// контроллер для управления страницей удаления записей
 require_once('../models/delete.php');
 $del = new Delete();
 $del->delete('test', 'id', $_GET['id']);

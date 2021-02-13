@@ -1,4 +1,5 @@
 <?php
+// модель для управления страницей добавления записей
 require_once('../config/database.php');
 
 class Create{

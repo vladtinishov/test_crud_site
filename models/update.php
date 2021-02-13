@@ -1,4 +1,5 @@
 <?php
+// модель для управления страницей обновления записей
 require_once('../config/database.php');
 
 class Update{

@@ -1,4 +1,5 @@
 <?php
+// контроллер для управления страницей получения массива с данным одной страницы
 require_once('../models/select.php');
 
 $record = new Select();

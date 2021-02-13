@@ -1,4 +1,5 @@
 <?php
+// контроллер для управления страницей обновления записей
 require_once('../models/update.php');
 if(isset($_GET['title']) && isset($_GET['content'])){
     $update = new Update();

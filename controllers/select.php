@@ -1,4 +1,5 @@
 <?php 
+// контроллер для управления страницей получения массива с записями
 require_once('../models/select.php');
 $select = new Select();
 ?>

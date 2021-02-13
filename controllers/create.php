@@ -1,4 +1,5 @@
 <?php
+// контроллер для управления страницей добавления записей
 require_once('../models/create.php');
 
 if(isset($_GET['title']) && isset($_GET['content'])){

@@ -1,4 +1,5 @@
 <?php
+// модель для управления страницей массива с записями
 require_once('../config/database.php');
 
 class Select{
