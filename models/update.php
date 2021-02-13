@@ -23,11 +23,3 @@ class Update{
 }
 
 
-$update = new Update();
-$key = $_GET['id'];
-$sql = "UPDATE test SET title=:title, content=:content WHERE id=$key";
-$data = array(
-    'title' => $_GET['title'],
-    'content' => $_GET['content'],
-);
-$update->update($data, $sql);

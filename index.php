@@ -1,2 +1,4 @@
-<a href="pages/select.php">Main</a>
-<a href="pages/create.php">Create</a>
+
+<a href="controllers/select.php">Main</a>
+<a href="controllers/create.php">Create</a>
+

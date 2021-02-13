@@ -10,10 +10,10 @@ class Delete{
         $this->pdo = $this->db->getPDO();
     }
 
-    public function delete($data, $db){
-        $sql = "DELETE FROM $db WHERE id=:id";
+    public function delete($db, $param, $value){
+        $sql = "DELETE FROM $db WHERE id=?";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->bindValue(':id', $data);
-        $stmt->execute();
+        $stmt->execute([$value]);
     }
 }
+

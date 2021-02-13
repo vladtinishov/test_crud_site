@@ -1,4 +1,4 @@
-<form action="../methods/update.php">
+<form action="../controllers/update.php">
     <input type="text" name='title'>
     <input type="text" name='content'>
     <input type="hidden" name='id' value="<?php echo $_GET['id'];?>">
