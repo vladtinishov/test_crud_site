@@ -1,3 +1,4 @@
+<div class="main">
 <?php foreach($select->select_all() as $key => $value):?>
     <div class="record">
         <a href="/controllers/single.php?id=<?php echo $value['id'] ?>">
@@ -9,3 +10,4 @@
         <hr>
     </div>
 <?php endforeach ?>
+</div>
