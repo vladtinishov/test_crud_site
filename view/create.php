@@ -1,7 +1,9 @@
 <div class="main">
     <form action="../controllers/create.php">
-        <input type="text" name='title'>
-        <input type="text" name='content'>
+        title: <br>
+        <input type="text" name='title'><br><br>
+        content: <br>
+        <input type="text" name='content'><br><br>
         <input type="submit">
     </form>
 </div>
