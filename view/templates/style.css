@@ -9,3 +9,9 @@ body{
     border-radius: 15px;
     width: 50%;
 }
+
+.message{
+    background: red;
+    color: white;
+    font-weight: bold;
+}

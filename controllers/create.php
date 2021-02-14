@@ -10,7 +10,7 @@ $data = array(
 );
 $sql = "INSERT INTO test(title, content) VALUES (:title, :content)";
 $cr->create($data, $sql);
-echo 'Record created';
+echo '<span style="background: green; color: white; padding: 10px; border-radius:10px">Создано</span>';
 }
 ?>
 

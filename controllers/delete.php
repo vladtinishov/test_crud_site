@@ -4,7 +4,7 @@ require_once('../models/delete.php');
 $del = new Delete();
 $del->delete('test', 'id', $_GET['id']);
 
-echo 'deleted';
+echo '<span style="background: green; color: white; padding: 10px; border-radius:10px">Удалить</span>';
 
 $title = 'Добавить запись';
 require_once('../view/templates/header.php');
