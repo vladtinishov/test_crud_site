@@ -10,7 +10,10 @@ if(isset($_GET['title']) && isset($_GET['content'])){
     );
     $sql = "INSERT INTO test(title, content) VALUES (:title, :content)";
     $cr->create($data, $sql);
-    echo '<span style="background: green; color: white; padding: 10px; border-radius:10px">Создано</span>';
+    echo '<span style="background: green; color: white; padding: 10px; border-radius:10px">
+            Создано | 
+            <a style="color: white" href="../index.php">на главную</a>
+            </span>';
 }
 ?>
 

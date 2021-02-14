@@ -10,7 +10,10 @@ if(isset($_GET['title']) && isset($_GET['content'])){
         'content' => $_GET['content'],
     );
     $update->update($data, $sql);
-    echo '<span style="background: green; color: white; padding: 10px; border-radius:10px">Обновлено</span>';
+    echo '<span style="background: green; color: white; padding: 10px; border-radius:10px">
+        Обновлено | 
+        <a style="color: white" href="../index.php">на главную</a>
+        </span>';
 }
 
 ?>
